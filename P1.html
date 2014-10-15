@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Portfolio &ndash; </title>
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure//pure.css">
+
+
+
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure//grids-responsive.css">
+  
+        <link rel="stylesheet" href="css/layouts/blog.css">
+  
+    <style>
+    
+     {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+    width:25%;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
+
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    font-family: Georgia, "Cambria", serif;
+    color: #444;
+    line-height: 1.8em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    .header {
+        margin: 80% 2em 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
+</style>
+    
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Patricia Cisneros </h1>
+            <h2 class="brand-tagline">Dynamic Web Apps Portfolio</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://piazza.com/careers/dashboard#/my_profile">Piazza </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/pcisnero"> GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">INTRODUCTION</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Tilo Mitra&#x27;s avatar" height="70" width="70" src="http://www.makeathumbnail.com/thumbnails/image288520.jpg">
+
+                        <h2 class="post-title">Project portfolio</h2>
+
+                       
+                    </header>
+
+                    <div class="post-description">
+                        <h3>Project 2 PHP Basics</h3>
+		View: <a href=" http://p2.dwa15.me">Link </a>
+		Github:<a href=" http://github.com/pcisnero/P2">Link </a>
+		
+		<h3>Project 3 Lavarel Basics</h3>
+		View:<a href=" http://p3.dwa15.me">Link </a>
+		Github: <a href=" http://github.com/pcisnero/P3">Link</a>
+		
+		<h3>Project 4 Final</h3>
+		View:<a href=" http://p4.dwa15.me">Link </a>
+		Github: <a href=" http://github.com/pcisnero/P4-Final">Link</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Questions</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Eric Ferraiuolo&#x27;s avatar" height="70" width="70" src="http://www.makeathumbnail.com/thumbnails/image288521.jpg">
+
+                        <h2 class="post-title">Everything You Need to Know About Me</h2>
+
+                      
+                    </header>
+
+                    <div class="post-description">
+                        
+                        <p><b><i>In 2+ sentences describe who you are and what you do.
+                        </i></b></p>
+                        <p>
+                            My name is Patricia, I´m 29, I live in hotels but my home is in Mexico City.  
+                          I am a senior consultant and I work for Deloitte. I do technology consulting( Technolgy, Strategy and Architecture) I really like my job :) but I already lost a fiance because of it. 
+                            I studied business at the University oF British Columbia and  IT management at Carnegie Mellon University. 
+                        
+                        </p>
+                    <p><b><i>Why are you taking this course?.
+                         </i></b></p>
+                        <p>
+                           I have a couple of good reasons: 1) I´m always getting new and different projects and if not an expert it is important to know about many different topics. I´m almost never involved in development but I do like to understand the technologies. The last project I had  was a system implementation that uses .NET, C# and SharePoint. I never know what I´m getting :D. 2) I took introduction to web development and I loved it 3) I need 3 B+ in three courses to apply for a degree and 4) I really like to learn.  
+                        </p>
+                    <p><b><i>What previous experience do you have with programming?
+                         </i></b></p>
+                        <p>
+                         
+                            
+                            I do have experience using Java, C# and Python
+                            
+                            I also started using Javascript and Visual Basic this years, one for academic purposes the other to make my life easier at work 
+                            
+                            
+                        </p>
+                    
+                     <p><b><i>Are you working on a Mac, PC, or some other platform?
+                        </i></b></p>
+                        <p>
+                           I am working on a Mac 
+                        </p>
+                     <p><b><i>Anything else we should know?
+                        </i></b></p>
+                        <p>
+                           I´m vegetarian, I love to read, write, meditate, swim and get drunk :)  I used to enjoy video games but I dont have time anymore. I love cats I have a Bengal, her name is "Perra"(Female dog in spanish) and she lives with my parents, because I live in hotels :(   
+                        </p>
+                    
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="Reid Burke&#x27;s avatar" height="70" width="70" src="http://www.makeathumbnail.com/thumbnails/image288522.jpg">
+
+                        <h2 class="post-title">+</h2>
+
+    
+                    </header>
+
+                                    
+                           </section>       
+                            </div>
+
+                            <div class="pure-u-1 pure-u-md-1-2">
+                          
+<a href="http://www.makeathumbnail.com/thumbnails/image288261.jpg">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive" height="250" width="250"
+                                         src="http://www.makeathumbnail.com/thumbnails/image288523.jpg">
+                                </a>
+
+                                                        
+<a href="http://www.makeathumbnail.com/thumbnails/image288261.jpg">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive" height="200" width="200"
+                                         src="http://www.makeathumbnail.com/thumbnails/image288524.jpg">
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+        
+
+                
+            </div>
+
+           
+        
+
+
+
+
+
+
+
+</body>
+</html>
